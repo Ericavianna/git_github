@@ -1,0 +1,350 @@
+/* Referencia https://www.w3schools.com/css/default.asp */
+
+/* Reset CSS https://meyerweb.com/eric/tools/css/reset/  para resetear todos los estilos del navegador */
+
+
+
+/* Generales
+*/
+
+* { box-sizing : border-box; } /* Para que ancho total de una caja sea igual a width y no incluya los padding */
+
+img {
+    max-width : 100%;  /* WEBRESPONSIVE : para que imagem no sobresalga de contenedor cuando se achique ancho de pagina */
+}
+
+/* WEBRESPONSIVE = trabajar con porcentajes + usar media queries */
+
+
+
+/*
+body { margin : 30px; 
+    font-size : 12px;
+    color : red;
+    width : 98%;
+    height : 670px;
+    background-color :rgb(5, 72, 75);
+    padding : 20px;
+}
+*/
+p { font-size : 20px; 
+}
+
+/* para que ancho caja sea = a width (sin sumar padding) */
+* { box-sizing : border-box; }
+
+
+/* Estilos tipograficos */
+
+@font-face {
+    font-family: Quicksand;
+    src: url(/fonts/Quicksand-VariableFont_wght.ttf) format("Truetype");
+    font-weight : bold;
+    font-style: normal;
+}
+
+.ejemplo { font-size : 30px;
+}
+
+p.ejemplo { font-size : 12px;
+            color : red;
+            width : 300px;
+            height : 400px;
+            background-color :cadetblue;
+            padding : 20px;
+            
+
+}
+
+div.contenedor { font-size : 12px;
+    color : red;
+    width : 98%;
+    height : 670px;
+    background-color :rgb(5, 72, 75);
+    padding : 20px;
+    /* overflow : scroll;  */
+}
+
+span.recuadro1 { font-size : 12px;
+    color : red;
+    width : 100%;
+    height : 100px;
+    background-color :rgb(77, 78, 78);
+    display : block;
+    margin-top : 0px;
+    margin-bottom : 20px;
+    margin-left : 0px;
+    margin-right : 0px;
+}
+
+span.recuadro2 { font-size : 12px;
+    color : red;
+    
+    width : 100%;
+    height : 300px;
+    background-color :rgb(77, 78, 78);
+    display : block; 
+    margin-top : 0px;
+    margin-bottom : 20px;
+    margin-left : 0px;
+    margin-right : 0px;
+}
+
+span.recuadro3 { font-size : 12px;
+    color : red;
+    float : left;
+    width : 49.3%;
+    height : 200px;
+    background-color :rgb(77, 78, 78);
+    margin-bottom : 20px;
+    margin-right : 20px;   
+    display : block;
+}
+
+span.recuadro4 { font-size : 12px;
+    color : red;
+    
+    float : left;
+    width : 49.3%;
+    height : 200px;
+    background-color :rgb(77, 78, 78);
+    margin-bottom : 20px;
+    margin-left : 0px;   
+}
+
+span.recuadro5 { font-size : 12px;
+    color : red;
+    
+    width : 100%;
+    height : 300px;
+    background-color :rgb(77, 78, 78);
+    
+    margin-top : 0px;
+    margin-bottom : 20px;
+    margin-left : 0px;
+    margin-right : 0px;
+}
+
+span.recuadro6 { font-size : 12px;
+    color : red;
+    float : left;
+    width : 49.3%;
+    height : 200px;
+    background-color :rgb(77, 78, 78);
+    margin-bottom : 20px;
+    margin-right : 20px;   
+   
+}
+
+span.recuadro7 { font-size : 12px;
+    color : red;
+    
+    float : left;
+    width : 49.3%;
+    height : 200px;
+    background-color :rgb(77, 78, 78);
+    margin-bottom : 20px;
+    margin-left : 0px;   
+}
+
+div.recuadro1 { font-size : 12px;
+    color : red;
+    width : 100%;
+    height : 100px;
+    background-color :rgb(77, 78, 78);
+    display : block;
+    margin-top : 0px;
+    margin-bottom : 20px;
+    margin-left : 0px;
+    margin-right : 0px;
+}
+
+div.recuadro2 { font-size : 12px;
+    color : red;
+    
+    width : 100%;
+    height : 300px;
+    background-color :rgb(77, 78, 78);
+    display : block; 
+    margin-top : 0px;
+    margin-bottom : 20px;
+    margin-left : 0px;
+    margin-right : 0px;
+    overflow:hidden;
+}
+
+div.recuadro3 { font-size : 12px;
+    color : red;
+    float : left;
+    width : 49.3%;
+    height : 200px;
+    background-color :rgb(77, 78, 78);
+    margin-bottom : 20px;
+    margin-right : 20px;   
+    display : block;
+}
+
+div.recuadro4 { font-size : 12px;
+    color : red;
+    
+    float : left;
+    width : 49.3%;
+    height : 200px;
+    background-color :rgb(77, 78, 78);
+    margin-bottom : 20px;
+    margin-left : 0px;   
+}
+
+.recuadroredondeado {
+    display : block;
+    width : 100%;
+    height : 100px;
+    border-radius : 20px 20px 20px 20px;
+    border-width : 5px;
+    border-color : cornflowerblue;
+    border-style : solid;
+    background-image: url(../imagenes/logo.jpg);
+    background-repeat : no-repeat;
+}
+
+.recuadrowebresp {
+
+    float : left;
+    width : 23%;
+    height : 200px;
+    background-color :rgb(77, 78, 78);
+    margin-bottom : 20px;
+    margin-left : 20px;   
+}
+
+@media screen and (max-width : 800px) {  /* funciona como un if */
+    .recuadrowebresp { width : 23%; }
+}
+
+@media screen and (max-width : 1200px) {
+    .recuadrowebresp { width : 48%; }
+}
+
+/* Cabecera */
+
+
+
+.navegacion { /* estilos */
+    margin-top : 12px;
+    border-radius : 20px 20px 20px 20px;
+    height: 100px;
+    background-color: cornflowerblue;
+    padding-top : 30px;
+    font-family : Quicksand, sans-serif;
+    font-size: 20px;
+    font-weight : bold;
+}
+
+.navmenu { /* estilos */
+    margin-top : 12px; 
+    border-radius : 20px 20px 20px 20px;
+ /*   height: 220px; 
+    padding-top : 30px; */
+    font-family : Quicksand, sans-serif;
+    font-size: 20px;
+    font-weight : bold;
+}
+
+.navmenu a {
+    display : block;
+    text-decoration : none;
+    color : #2D211F;
+    border-bottom : 1px solid #2D211F;
+    transition : 2s color;
+}
+
+.navmenu a:hover {
+    color :rgb(5, 72, 75)
+}
+
+.lanzador-menu {
+    text-decoration : none;
+    color : #FFF;
+    padding : 6px 10px;
+    background-color : #2D211F;
+    border-radius : 3px;
+}
+
+/* cuando la ventana del navegador tiene 600 pixeles o más */
+@media screen and (min-width : 600px) {
+    .lanzador-menu { 
+        display : none }
+
+    .navmenu {position : absolute;
+                top : 10px}
+    
+    .navmenu li {
+            display : inline-block;
+            margin-right : 15px;
+    }
+    body {
+        margin-top : 60px;
+    }
+
+    
+}
+
+/* cuando la ventana del navegador tenga 600px o menos */
+
+@media screen and (max-width : 600px) {
+
+    .js .navmenu {
+        max-height : 0;
+        overflow : hidden;
+        transition : max-height .5s;
+        position : absolute;
+        top : 43px;
+        left : 30px;
+        right : 30px;
+        background-color : #2D211F;
+        
+    }
+
+    .js .navmenu a {
+        padding : 5px 10px;
+        color : #FFF;
+        border-top : 1px solid rgba(255,255,255,.4);
+    }
+
+    .js .navmenu.menu-desplegado {
+        max-height : 600px;
+    }
+}
+
+
+ul {
+    padding : 0;
+    list-style : none;
+    margin : 0;
+}
+/*
+li {
+        display : inline;
+
+        list-style-type : none;
+        padding-right: 5rem;
+    }
+*/
+.logo { /* estilos */
+}
+
+/* Estructura */
+
+.contenedorx {
+
+}
+
+.pie {
+
+}
+
+/* Páginas */
+
+.contacto {
+
+}
